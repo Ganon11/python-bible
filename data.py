@@ -54,36 +54,37 @@ def bible_data(translation=None):
             'testament': 'OT',
             'verse_counts': [28, 36, 21, 22, 12, 21, 17, 22, 27, 27, 15, 25, 23, 52, 35, 23, 58, 30, 24, 42, 15, 23, 29, 22, 44, 25, 12, 25, 11, 31, 13],
             'name': '1 Samuel',
-            'abbrs': ['1sam', '1 sam', '1sm', '1 sm', '1samuel', '1sa', '1 sa']
+            'abbrs': ['1sam', '1 sam', '1sm', '1 sm', '1samuel', '1sa', '1 sa', 'i samual']
         },
         {
             'testament': 'OT',
             'verse_counts': [27, 32, 39, 12, 25, 23, 29, 18, 13, 19, 27, 31, 39, 33, 37, 23, 29, 33, 43, 26, 22, 51, 39, 25],
             'name': '2 Samuel',
-            'abbrs': ['2sam', '2 sam', '2sm', '2 sm', '2samuel', '2sa', '2 sa']
+            'abbrs': ['2sam', '2 sam', '2sm', '2 sm', '2samuel', '2sa', '2 sa', 'ii samuel']
         },
         {
             'testament': 'OT',
             'verse_counts': [53, 46, 28, 34, 18, 38, 51, 66, 28, 29, 43, 33, 34, 31, 34, 34, 24, 46, 21, 43, 29, 53],
             'name': '1 Kings',
-            'abbrs': ['1king', '1kg', '1 kg', '1kings', '1ki', '1 ki']
+            'abbrs': ['1king', '1kg', '1 kg', '1kings', '1ki', '1 ki', 'i kings']
         },
         {
             'testament': 'OT',
             'verse_counts': [18, 25, 27, 44, 27, 33, 20, 29, 37, 36, 21, 21, 25, 29, 38, 20, 41, 37, 37, 21, 26, 20, 37, 20, 30],
             'name': '2 Kings',
-            'abbrs': ['2king' '2kg', '2kg', '2kings', '2ki', '2 ki']},
+            'abbrs': ['2king' '2kg', '2kg', '2kings', '2ki', '2 ki', 'ii kings']
+        },
         {
             'testament': 'OT',
             'verse_counts': [54, 55, 24, 43, 26, 81, 40, 40, 44, 14, 47, 40, 14, 17, 29, 43, 27, 17, 19, 8, 30, 19, 32, 31, 31, 32, 34, 21, 30],
             'name': '1 Chronicles',
-            'abbrs': ['1chron', '1chronicles', '1ch', '1 chron', '1 ch']
+            'abbrs': ['1chron', '1chronicles', '1ch', '1 chron', '1 ch', 'i chronicles']
         },
         {
             'testament': 'OT',
             'verse_counts': [17, 18, 17, 22, 14, 42, 22, 18, 31, 19, 23, 16, 22, 15, 19, 14, 19, 34, 11, 37, 20, 12, 21, 27, 28, 23, 9, 27, 36, 27, 21, 33, 25, 33, 27, 23],
             'name': '2 Chronicles',
-            'abbrs': ['2chron', '2chronicles', '2ch', '2 chron', '2 ch']
+            'abbrs': ['2chron', '2chronicles', '2ch', '2 chron', '2 ch', 'ii chronicles']
         },
         {
             'testament': 'OT',
@@ -307,25 +308,25 @@ def bible_data(translation=None):
             'testament': 'NT',
             'verse_counts': [10, 20, 13, 18, 28],
             'name': '1 Thessalonians',
-            'abbrs': ['1thes', '1thessalonians', '1thess', '1th', '1 thess', '1 thes', '1 th']
+            'abbrs': ['1thes', '1thessalonians', '1thess', '1th', '1 thess', '1 thes', '1 th', 'i thessalonians']
         },
         {
             'testament': 'NT',
             'verse_counts': [12, 17, 18],
             'name': '2 Thessalonians',
-            'abbrs': ['2thes', '2thessalonians', '2thess', '2th', '2 thess', '2 thes', '2 th']
+            'abbrs': ['2thes', '2thessalonians', '2thess', '2th', '2 thess', '2 thes', '2 th', 'ii thessalonians']
         },
         {
             'testament': 'NT',
             'verse_counts': [20, 15, 16, 16, 25, 21],
             'name': '1 Timothy',
-            'abbrs': ['1tim', '1tm', '1 tm', '1timothy', '1ti', '1 tim', '1 ti']
+            'abbrs': ['1tim', '1tm', '1 tm', '1timothy', '1ti', '1 tim', '1 ti', 'i timothy']
         },
         {
             'testament': 'NT',
             'verse_counts': [18, 26, 17, 22],
             'name': '2 Timothy',
-            'abbrs': ['2tim', '2tm', '2 tm', '2timothy', '2ti', '2 tim', '2 ti']
+            'abbrs': ['2tim', '2tm', '2 tm', '2timothy', '2ti', '2 tim', '2 ti', 'ii timothy']
         },
         {
             'testament': 'NT',
@@ -355,37 +356,37 @@ def bible_data(translation=None):
             'testament': 'NT',
             'verse_counts': [25, 25, 22, 19, 14],
             'name': '1 Peter',
-            'abbrs': ['1pet', '1p', '1pe', '1 pe', '1pt', '1pe', '1 pet', '1 pt', '1 pe']
+            'abbrs': ['1pet', '1p', '1pe', '1 pe', '1pt', '1pe', '1 pet', '1 pt', '1 pe', 'i peter']
         },
         {
             'testament': 'NT',
             'verse_counts': [21, 22, 18],
             'name': '2 Peter',
-            'abbrs': ['2pet', '2p', '2pe', '2 pe', '2pt', '2pe', '2 pet', '2 pt', '2 pe']
+            'abbrs': ['2pet', '2p', '2pe', '2 pe', '2pt', '2pe', '2 pet', '2 pt', '2 pe', 'ii peter']
         },
         {
             'testament': 'NT',
             'verse_counts': [10, 29, 24, 21, 21],
             'name': '1 John',
-            'abbrs': ['1john', '1j', '1jo', '1 jo', '1jn', '1 jn']
+            'abbrs': ['1john', '1j', '1jo', '1 jo', '1jn', '1 jn', 'i john']
         },
         {
             'testament': 'NT',
             'verse_counts': [13],
             'name': '2 John',
-            'abbrs': ['2john', '2j', '2jo', '2 jo', '2jn', '2 jn']
+            'abbrs': ['2john', '2j', '2jo', '2 jo', '2jn', '2 jn', 'ii john']
         },
         {
             'testament': 'NT',
             'verse_counts': [15],
             'name': '3 John',
-            'abbrs': ['3john', '3j', '3jo', '3 jo', '3jn', '3 jn']
+            'abbrs': ['3john', '3j', '3jo', '3 jo', '3jn', '3 jn', 'iii john']
         },
         {
             'testament': 'NT',
             'verse_counts': [25],
             'name': 'Jude',
-            'abbrs': ['jude','ju', 'jud']
+            'abbrs': ['jude','ju', 'jud', 'judith']
         },
         {
             'testament': 'NT',

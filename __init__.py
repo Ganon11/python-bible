@@ -8,6 +8,7 @@ verse_re = re.compile(r'^\d{1,2}-\d{1,3}-\d{1,3}(-[a-zA-Z]{2,})?$')
 # regular expressions for identifying book, and chapter:verse references
 book_re = re.compile(r'^\d*[a-zA-Z ]*')
 ref_re = re.compile(r'\d{1,3}:\d{1,3}')
+simple_ref_re = re.compile(r'\d{1,3}')
 translation_re = re.compile(r'[a-zA-Z]{2,}$')
 
 class RangeError(Exception):
@@ -70,12 +71,6 @@ class Verse(object):
                 except:
                     raise RangeError("We can't find that book of the Bible: %s" % (args[0]))
 
-                # find the chapter:verse reference
-                try:
-                    ref = ref_re.search(args[0]).group(0)
-                except:
-                    raise Exception("We can't make sense of your chapter:verse reference")
-
                 # find the translation, if provided
                 try:
                     self.translation = translation_re.search(args[0]).group(0).upper()
@@ -99,8 +94,24 @@ class Verse(object):
                 except:
                     raise RangeError("We can't find that book of the Bible!: " + b)
 
-                # extract chapter and verse from ref
-                self.chapter, self.verse = map(int, ref.split(':'))
+                if len(self.bible[self.book - 1]['verse_counts']) == 1:
+                    # find the verse reference
+                    try:
+                        ref = simple_ref_re.search(args[0]).group(0)
+                    except:
+                        raise Exception("We can't make sense of your verse reference")
+
+                    self.chapter = 1
+                    self.verse = int(ref)
+                else:
+                    # find the chapter:verse reference
+                    try:
+                        ref = ref_re.search(args[0]).group(0)
+                    except:
+                        raise Exception("We can't make sense of your chapter:verse reference")
+
+                    # extract chapter and verse from ref
+                    self.chapter, self.verse = map(int, ref.split(':'))
         
         # if we didn't add the bible attribute above, add it now
         if 'bible' not in self.__dict__:
